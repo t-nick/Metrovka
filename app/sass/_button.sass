@@ -1,0 +1,38 @@
+// buttons
+.button 
+  text-align: center
+  color: $button-color
+  background-color: $button-bg
+  height: 40px
+
+.nav_btn  
+  display: block
+  padding: 15px 5px 10px
+  margin-right: 30px
+  color: $header-color
+  img
+    padding: 3px 9px 3px 3px
+  &:hover
+    border-bottom: 2px solid $header-color
+  &:active, &.active
+    border-bottom: 2px solid $header-color
+
+.naw_button
+  background-color: $naw_btn
+  padding: 10px 30px 10px 5px
+  line-height: 17px
+  img
+    padding: 0 10px
+
+.singin
+  @extend .button
+  @extend .nav_btn 
+  margin-right: 0
+  margin-left: 15px
+.form_button
+  background-color: $button-color
+  padding: 10px 40px
+  color: $button_bg
+  height: 40px
+  border: none
+  margin-top: 25px

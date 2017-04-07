@@ -1,0 +1,224 @@
+@import 'variables'
+@import 'button'
+
+body
+  background-color: $main-bg
+  color: $main-color
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+a 
+  text-decoration: none
+  cursor: pointer
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+li  
+  list-style: none
+.wrap
+  max-width: 890px
+  margin: 0 auto
+
+.header
+  background-color: $header-bg
+  width: 100%
+  color: $bg
+
+.navigation
+  display: flex
+  justify-content: space-between
+
+.nav_block
+  display: flex
+  flex-wrap: no-wrap
+.logo
+  display: block
+  padding: 20px 0 0 0
+  margin-right: 40px
+.menu
+  margin-top: 12px
+.menu_item
+  display: inline-block
+  list-style: none
+
+.block_button
+  margin-top: 17px
+  display: flex
+  flex-wrap: no-wrap
+
+h1
+  font-size: 32px
+  margin-top: 63px
+  font-weight: normal
+
+// Первая форма поиска по Украине и количеству комнат
+.choice
+  display: flex
+  flex-wrap: no-wrap
+  padding-top: 20px
+  justify-content: space-between
+  height: 125px
+.city
+  width: 340px
+select  
+  width: 340px 
+  padding: 10px 15px
+  margin: 10px 0
+  border: 1px solid #ccc
+  box-sizing: border-box
+  border-radius: 2px
+.select_option
+  padding: 10px 15px
+  width: 340px
+  margin: 8px 0
+  border: 1px solid $select_border
+  box-sizing: border-box
+  border-radius: 2px
+  &:hover
+    background-color: $select_hover
+// choice_room
+.room_block
+  margin: 8px 0
+  label
+    margin-bottom: 50px
+    display:inline-block
+.checkbox
+  cursor:pointer
+  display: inline-block
+  line-height: 43px
+  margin-right: 20px
+  input 
+    display: none  
+    & + span:before 
+      content: " "
+      height: 40px
+      width: 40px			
+      display: flex
+      align-items: center
+      justify-content: center
+      float: left
+      background-color: $header-bg
+      border: 2px solid #fff
+      border-radius: 50%
+      margin-right: -26px
+    &:checked + span 
+      content: " "
+      color: $main-color
+    &:checked + span:before 
+      content: " "
+      background-color: #fff
+
+.metro
+  @extend .wrap
+  margin-top: 20px
+  padding: 40px
+  background-color: $bg
+  display: flex
+
+  justify-content: space-between
+
+h2
+  color: $button_bg
+  padding-bottom: 20px
+  font-size: 24px
+  font-weight: normal
+
+// Поиск типа обьекта Квартиры-Дома-Офисы
+.type-choice
+  margin: 10px 0
+  label
+    margin-bottom: 50px
+    display:inline-block
+    height: 30px
+    width: 70px
+    text-align: center
+.radio_type
+  cursor: pointer
+  display: inline-block
+  line-height: 30px
+  margin-right: 10px
+  input 
+    display: none
+    & + span:before 
+      content: " "
+      font-size: 14px
+      height: 28px
+      width: 72px			
+      display: flex
+      align-items: center
+      justify-content: center
+      float: left
+      background-color: #fff  
+      border-bottom: 2px solid #fff
+      transition: 1s
+      margin-right: -70px
+    &:checked + span 
+      content: " "
+      transition: .3s
+      padding-bottom: 10px
+      background-color: #ffffff
+      border-bottom: 2px solid #30AE63
+
+.metro-bull
+  background-color: $bull
+  display: block
+  height: 8px
+  width: 8px
+  padding: 3px
+
+
+
+.bestoffer
+  @extend .wrap
+  margin-top: 20px
+  background-color: $bg
+  
+h3
+  text-align: center
+  font-size: 24px
+  font-weight: normal
+  color: $main-color
+  margin-bottom: 20px
+  padding-top: 25px
+  width: 100%
+
+.offer_block
+  display: flex
+  flex-wrap:wrap
+  margin: 25px
+  margin-bottom: 50px
+.offer_item
+  flex-basis: 200px 
+  margin-right: 10px
+.offer_item_img
+  position: relative
+  margin-bottom: 15px
+.offer_setting
+  position: absolute
+  top: 12px
+  right: 10px
+.price
+  font-size: 16px
+  padding-bottom: 10px
+  img
+    padding-left: 20px
+.properties
+  font-size: 12px 
+  color: $color_properties
+  padding-bottom: 20px
+.metro-properties
+  font-size: 12px
+  img
+    padding-right: 10px
+.lookat
+  display: block
+  width: 100%
+  border-top: 2px solid $border_look
+  height: 40px
+  text-align: center
+  padding-top: 10px
+  font-size: 16px
+.lastoffer
+  @extend .wrap
+  margin-top: 20px
+  background-color: $bg
