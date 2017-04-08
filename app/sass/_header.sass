@@ -1,0 +1,89 @@
+.header
+  background-color: $header-bg
+  width: 100%
+  color: $bg
+
+.navigation
+  display: flex
+  justify-content: space-between
+
+.nav_block
+  display: flex
+  flex-wrap: no-wrap
+.logo
+  display: block
+  padding: 20px 0 0 0
+  margin-right: 40px
+.menu
+  margin-top: 12px
+.menu_item
+  display: inline-block
+  list-style: none
+
+.block_button
+  margin-top: 17px
+  display: flex
+  flex-wrap: no-wrap
+
+h1
+  font-size: 32px
+  margin-top: 63px
+  font-weight: normal
+
+// Первая форма поиска по Украине и количеству комнат
+.choice
+  display: flex
+  flex-wrap: no-wrap
+  padding-top: 20px
+  justify-content: space-between
+  height: 122px
+.city
+  width: 340px
+// select  
+//   width: 340px 
+//   padding: 10px 15px
+//   margin: 10px 0
+//   border: 1px solid #ccc
+//   box-sizing: border-box
+//   border-radius: 2px
+// .select_option
+//   padding: 10px 15px
+//   width: 340px
+//   margin: 8px 0
+//   border: 1px solid $select_border
+//   box-sizing: border-box
+//   border-radius: 2px
+//   &:hover
+//     background-color: $select_hover
+
+// choice_room
+.room_block
+  margin: 8px 0
+  label
+    margin-bottom: 20px
+    display:inline-block
+.checkbox
+  cursor:pointer
+  display: inline-block
+  line-height: 43px
+  margin-right: 20px
+  input 
+    display: none  
+    & + span:before 
+      content: " "
+      height: 40px
+      width: 40px			
+      // display: flex
+      // align-items: center
+      // justify-content: center
+      float: left
+      background-color: $header-bg
+      border: 2px solid #fff
+      border-radius: 50%
+      margin-right: -26px
+    &:checked + span 
+      content: " "
+      color: $main-color
+    &:checked + span:before 
+      content: " "
+      background-color: #fff

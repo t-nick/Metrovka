@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "metrovka",
   "version": "1.0.0",
   "description": "new progect on gulp",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "gulp-imagemin": "^3.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
     "imagemin-pngquant": "^5.0.0"
   }
 }

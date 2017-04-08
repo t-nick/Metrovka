@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   
   	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">   
+	<link rel="stylesheet" href="css/main.css">  
   </head>
   <body>
   	<header class="header">
@@ -69,6 +69,7 @@
 
 	</div>	
 	</header>
+<!-- METRO -->
   <div class="metro">
   <div class="metro_info">
   	<h2>Недвижимость возле метро</h2>
@@ -99,7 +100,7 @@
 				 
 			</div>
 			
-			<button class="form_button" type="submit">Перейти к поиску</button>
+			<button class="button metro-btn" type="submit">Показать результаты поиска</button>
 			
 		</div>
 </form>
@@ -110,7 +111,7 @@
   </div>
 <!-- Лучшие предложения -->
   <div class="bestoffer">
-  	<h3>Лучшие предложения в Киеве</h3>
+  	<h3 class="h3">Лучшие предложения в Киеве</h3>
   	<ul class="offer_block">
   		<li class="offer_item">
   			<div class="offer_item_img"><img src="img/flat.jpg" alt="flat foto"><a class="offer_setting" href="#"><img src="img/SettingV.png" alt="setting vertical"></a></div>
@@ -149,8 +150,20 @@
   </div>
 <!-- Посление обьявления -->
   <div class="lastoffer">
-    <h3>Последние обьявления в Киеве</h3>
-  	<ul class="offer_block">
+    <h3 class="h3 h3_last">Последние обьявления в Киеве</h3>
+    <!-- Выбор типа -->
+			<div class="type-choice">
+				<label class="radio_type"><input type="radio" name="type-choice" value="flat" checked="checked">
+				<span>Квартиры</span>
+					</label>
+				<label class="radio_type"><input type="radio"  name="type-choice" value="house">
+				<span>Дома</span>
+				</label>
+				<label class="radio_type"><input type="radio" name="type-choice" value="offics">
+				<span>Офисы</span>
+				</label>				
+			</div>
+  	<ul class="offer_block last_offer_block">
   		<li class="offer_item">
   			<div class="offer_item_img"><img src="img/flat1.jpg" alt="flat foto"><a class="offer_setting" href="#"><img src="img/SettingV.png" alt="setting vertical"></a></div>
   			<div>
@@ -186,6 +199,15 @@
   	</ul>
   	<a href="#" class="lookat">Смотреть лучшие ценовые предложения</a>
   </div>
-  
+  <script type="text/javascript" src="js/libs.min.js"></script>
+  <script type="text/javascript" src="libs/jquery.form-styler/jquery.formstyler.js"></script> 
+  <script type="text/javascript">
+$(function() {
+
+  $('select').styler();
+
+});
+
+  </script>
   </body>
 </html>

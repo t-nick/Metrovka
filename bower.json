@@ -1,6 +1,9 @@
 {
-  "name": "project",
+  "name": "metrovka",
   "dependencies": {
-    "normalize-css": "normalize.css#^5.0.0"
+    "normalize-css": "normalize.css#^5.0.0",
+    "jquery": "^3.1.1",
+    "modernizer": "^2.8.2",
+    "jquery.form-styler"
     }
 }
